@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Heritage Of India</title>
+    </head>   
+    <style>
+        .fullscreen{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .fullscreen video{
+            position: absolute;
+            bottom: 0;
+            top:0;
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content{
+            text-align: center;
+            text-decoration: none;
+            margin-top:130px;
+            color:black;
+            font-family: Georgia;
+        }
+        h1{
+            font-size:80px;
+        } 
+        p{
+            font-size:30px;
+        }
+    </style> 
+    <body>
+        <div class="fullscreen">
+            <video src="Heritage.mp4" autoplay muted loop></video>
+            <div class="content">
+                <h1>Heritage</h1>
+                <p>Ancient history comes alive here</p>
+            </div>
+        </div>
+    </body>
+

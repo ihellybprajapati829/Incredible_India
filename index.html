@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Welcome To Incredible India</title>
+</head>
+<style>
+    .fullscreen {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fullscreen video {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .content a {
+        display: block;
+        margin: 50px auto;
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 5px;
+        background-color: tomato;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .content img {
+        width: 800px;
+        height: 350px;
+        margin-top: 60px;
+    }
+</style>
+
+<body>
+    <div class="fullscreen">
+        <video src="./video/Welcome.mp4" autoplay muted loop></video>
+        <div class="content">
+            <img src="./img/1.png"></img>
+            <a href="Main.html">Click here...</a>
+        </div>
+    </div>
+</body>

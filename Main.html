@@ -1,0 +1,367 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Main Page</title>
+</head>
+<style>
+    body {
+        margin-top: 20px;
+    }
+
+    h1 {
+        position: absolute;
+        font-size: 100px;
+        font-family: Bahnschrift;
+        margin: 80px 260px;
+        color: #000;
+    }
+
+    .main img {
+        width: 1000px;
+        height: 300px;
+        position: relative;
+        opacity: 0.6;
+        margin: 0px 120px;
+        z-index: -1;
+    }
+
+    p {
+        text-align: center;
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 50px;
+        font-family: Arial;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-family: Georgia;
+        text-align: center;
+        margin-top: 0px;
+        color: black;
+    }
+
+    .first {
+        display: flex;
+        text-align: center;
+        color: black;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first .container {
+        position: relative;
+        width: 1000px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first .container .card {
+        position: relative;
+        max-width: 300px;
+        height: 250px;
+        padding: 20px 10px;
+        margin: 30px 5px;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: black;
+        flex-direction: column;
+        border-radius: 4px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .container .card:hover {
+        height: 465px;
+    }
+
+    .first .container .card .imgbox {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    .first .container .card .imgbox img {
+        position: relative;
+        width: 230px;
+        height: 300px;
+        border-radius: 4px;
+    }
+
+    .first .container .card .content {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-family: Arial;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .first .container .card h2 {
+        color: #810e78;
+        font-family: Georgia;
+    }
+
+    .container .card:hover .content {
+        opacity: 1;
+        margin-top: -45px;
+        transition-delay: 0.3s;
+    }
+
+    .middle {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .middle .container {
+        position: relative;
+        width: 90%;
+        float: left;
+        margin: 20px 0px 0px 50px;
+        max-width: 250px;
+    }
+
+    .middle .container .box {
+        position: relative;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle .container .box .content {
+        position: relative;
+        padding: 20px;
+    }
+
+    .box .content h3 {
+        margin: 0px 0px 30px 5px;
+        padding: 0px;
+        font-size: 26px;
+        font-family: Georgia;
+        color: #000099;
+    }
+
+    .box .content p {
+        margin: 0px 0px 0px 5px;
+        padding: 0px;
+        color: #000000;
+        font-size: 16px;
+        font-family: Arial;
+    }
+
+    .box .content a {
+        position: relative;
+        margin: 20px 0px 0px 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        border: 2px double #000000;
+        display: inline-block;
+        color: black;
+        transform: translateY(-40px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .box:hover .content a {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .box .content a:hover {
+        color: white;
+        background-color: #000099;
+    }
+
+    .container .box::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background-color: black;
+        z-index: -1;
+        transform: skew(2deg, 2deg);
+        background-image: linear-gradient(315deg, #e600e6, #00cc00);
+    }
+
+    .middle .container:nth-child(1) {
+        background-image: url('./img/heritage.jfif');
+        background-repeat: no-repeat;
+        background-size: 295px 500px;
+    }
+
+    .middle .container:nth-child(2) {
+        background-image: url('./img/art.jpg');
+        background-repeat: no-repeat;
+        background-size: 295px 500px;
+    }
+
+    .middle .container:nth-child(3) {
+        background-image: url('./img/nature.jpg');
+        background-repeat: no-repeat;
+        background-size: 295px 500px;
+    }
+
+    .middle .container:nth-child(4) {
+        background-image: url(./img/spiritual.jfif);
+        background-repeat: no-repeat;
+        background-size: 295px 500px;
+    }
+
+    footer {
+        background-color: black;
+        opacity: 0.9;
+        height: 100px;
+        margin: 0;
+    }
+
+    footer p {
+        font-size: 20px;
+        font-family: 'Times New Roman';
+        text-align: center;
+        color: white;
+        padding: 30px 8px 0px 8px;
+        bottom: 0;
+    }
+</style>
+
+<body>
+    <h1>!ncredible !ndia</h1>
+    <div class="main">
+        <img src="./img/main.jfif"></img>
+    </div>
+    <div>
+        <p>One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich
+            heritage and myriad attractions, the country is among the most popular tourist destinations in the world. It
+            covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain
+            forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia,
+            marked off as it is by mountains and the sea, which give the country a distinct geographical entity.
+        </p>
+    </div>
+    <br>
+    <h3>Must Visit Destinations</h3>
+    <p>From historical cities to natural splendours, come see the best of India</p>
+    <div class="first">
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="./img/Delhi.jfif"></img>
+                </div>
+                <div class="content">
+                    <h2>Delhi</h2>
+                    <p>With old monuments and busy neighbourhoods subtly merging with a vibrant and contemporary
+                        cosmopolitan world, Delhi, the capital of India, is a fascinating tourist destination. Poised
+                        along the banks of River Yamuna, Delhi, which is almost 1,000 years old, offers a mesmeric
+                        mosaic of experiences, both heritage and contemporary.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="./img/Mumbai.jfif"></img>
+                </div>
+                <div class="content">
+                    <h2>Mumbai</h2>
+                    <p>Mumbai, the capital of Maharashtra, attracts dreamers with sky-high ambitions from every corner
+                        of the country. It is a unique place where the past is mixed with the future and history meets
+                        modernity, a city that lies at the cross section of business and entertainment and beats to a
+                        pulsating rhythm of its own.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="./img/A&N.jfif"></img>
+                </div>
+                <div class="content">
+                    <h2>Andaman And Nicobar</h2>
+                    <p>With turquoise waters and shimmering white beaches surrounded by a mangrove forest and primitive
+                        jungles, the Andaman and Nicobar Islands are a tropical paradise that draw visitors from
+                        far-flung places.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3>Immersive Experiences</h3>
+    <p>In the land of opulence, let loose and discover yourself</p>
+    <div class="middle">
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h3>Heritage</h3>
+                    <p>
+                        A land resounding with the riches and glories of opulent dynasties, powerful rulers, flourishing
+                        civilisations and profound history, India has a splendid heritage that is reflected in its
+                        architecture, monuments, arts, crafts, cultures and even religions.
+                    </p>
+                    <a href="Heritage.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h3>Art</h3>
+                    <p>
+                        The land where classical melodies merge seamlessly with a mesmerising mosaic of exquisite
+                        paintings, ancient weaves and other handicrafts, divine dance forms, fascinating festivals and
+                        scintillating sculptures, India is a vibrant potpourri of arts and crafts.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h3>Nature And Wildlife</h3>
+                    <p>
+                        From hauntingly beautiful snowy escapades to lush forests and hills of rolling green, from the
+                        endless golden beaches to the sapphire and emerald lakes embedded in the landscape, the natural
+                        beauty of the Indian subcontinent is unparalleled.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h3>Spiritual</h3>
+                    <p>
+                        India is its billion people. And it is safe to say that these people define what spirituality in
+                        India is. The most prominent religions in the country are Hinduism, Islam, Christianity,
+                        Buddhism, Sikhism and Jainism.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Privacy Policy | Terms Of Platform Use | Important Links | Emergency
+            <br>© Ministry of Tourism, Government of India
+        </p>
+    </footer>
+</body>
