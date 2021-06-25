@@ -9,12 +9,25 @@
         margin-top: 20px;
     }
 
+    #heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     h1 {
         position: absolute;
         font-size: 100px;
         font-family: Bahnschrift;
-        margin: 80px 260px;
         color: #000;
+        padding-top: 15%;
+
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main img {
@@ -22,7 +35,6 @@
         height: 300px;
         position: relative;
         opacity: 0.6;
-        margin: 0px 120px;
         z-index: -1;
     }
 
@@ -118,7 +130,10 @@
     .middle {
         margin: 0;
         padding: 0;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .middle .container {
@@ -237,7 +252,9 @@
 </style>
 
 <body>
-    <h1>!ncredible !ndia</h1>
+    <div id="heading">
+        <h1>!ncredible !ndia</h1>
+    </div>
     <div class="main">
         <img src="./img/main.jfif"></img>
     </div>
